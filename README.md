@@ -148,17 +148,30 @@ python inference.py --dataset lvis --exp-name foris-lvis --crf-mask-refinement -
 
 # Part segmentation
 python inference.py --dataset pascal_part --exp-name foris-pascal --crf-mask-refinement --fold 0
+python inference.py --dataset pascal_part --exp-name foris-pascal --crf-mask-refinement --fold 1
+python inference.py --dataset pascal_part --exp-name foris-pascal --crf-mask-refinement --fold 2
+python inference.py --dataset pascal_part --exp-name foris-pascal --crf-mask-refinement --fold 3
+
+
 python inference.py --dataset paco_part --exp-name foris-paco --crf-mask-refinement --fold 0
+python inference.py --dataset paco_part --exp-name foris-paco --crf-mask-refinement --fold 1
+python inference.py --dataset paco_part --exp-name foris-paco --crf-mask-refinement --fold 2
+python inference.py --dataset paco_part --exp-name foris-paco --crf-mask-refinement --fold 3
 
 # Cross-domain semantic segmentation
 python inference.py --dataset isic --exp-name foris-isic --crf-mask-refinement
 python inference.py --dataset suim --exp-name foris-suim --crf-mask-refinement
 python inference.py --dataset isaid --exp-name foris-isaid --crf-mask-refinement --fold 0
-python inference.py --dataset lung --data-root data/LungSegmentation --exp-name foris-lung --crf-mask-refinement
-python inference.py --dataset permis --exp-name foris-permis --crf-mask-refinement
+python inference.py --dataset isaid --exp-name foris-isaid --crf-mask-refinement --fold 1
+python inference.py --dataset isaid --exp-name foris-isaid --crf-mask-refinement --fold 2
 
-# Multi-shot (e.g., 5-shot on ISIC)
-python inference.py --dataset isic --exp-name foris-isic-5shot --crf-mask-refinement --shots 5
+python inference.py --dataset lung --data-root data/LungSegmentation --exp-name foris-lung --crf-mask-refinement
+
+
+dataset fold to evaluate (default: ). Used by multi-fold datasets: COCO, PACO-Part, and PASCAL-Part have 4 folds; iSAID has 3; LVIS has 10
+
+
+
 ```
 
 Use `--data-root /path/to/data` if datasets are stored elsewhere. Example shell scripts are provided under `scripts/`.
