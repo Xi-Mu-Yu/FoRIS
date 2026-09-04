@@ -230,7 +230,7 @@ If you find this work useful, please cite:
 
 ## Acknowledgements
 
-This project builds upon and adapts ideas from [INSID3](https://github.com/cuttano/INSID3). We also thank the authors of:
+This project builds upon and adapts ideas from [INSID3](https://github.com/visinf/INSID3). We also thank the authors of:
 
 - [DINOv3](https://github.com/facebookresearch/dinov3)
 - [Matcher](https://github.com/aim-uofa/Matcher)
