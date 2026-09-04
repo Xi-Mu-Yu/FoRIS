@@ -5,9 +5,12 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2609.03384-b31b1b.svg)](https://arxiv.org/abs/2609.03384)
 [![Project Page](https://img.shields.io/badge/Code-GitHub-blue)](https://github.com/Xi-Mu-Yu/FoRIS)
 
-**Ming Hu** · **Jianfu Yin** · **Mingyu Dou** · **Miaomiao Zhang** · **Yao Wang** · **Cong Hu** · **Bingliang Hu** · **Quan Wang**
+**Ming Hu**<sup>1,2</sup> · **Jianfu Yin**<sup>1,2</sup> · **Mingyu Dou**<sup>1,2</sup> · **Miaomiao Zhang**<sup>1,2</sup> · **Yao Wang**<sup>3</sup> · **Cong Hu**<sup>4</sup> · **Bingliang Hu**<sup>1</sup> · **Quan Wang**<sup>1</sup>
 
-Xi'an Institute of Optics and Precision Mechanics, CAS · University of Chinese Academy of Sciences · Xi'an Jiaotong University · Zhongnan Hospital of Wuhan University
+<sup>1</sup> Xi'an Institute of Optics and Precision Mechanics, CAS  
+<sup>2</sup> University of Chinese Academy of Sciences  
+<sup>3</sup> Xi'an Jiaotong University  
+<sup>4</sup> Zhongnan Hospital of Wuhan University
 
 </div>
 
@@ -32,9 +35,9 @@ FoRIS reinterprets in-context segmentation as a **coarse-to-fine foreground refi
 
 | Stage | Module | Role |
 |-------|--------|------|
-| **FP** | Adaptive Positional Debiasing (APD) + Two-stage Foreground Refinement (FR) | Remove positional/background interference and produce an initial purified response \(S^{(1)}\) |
-| **FL** | Cross-image candidate voting + multi-cue clustering | Localize discriminative target regions and refine to \(S^{(2)}\) |
-| **FC** | Semantic Disagreement Penalization (SDP) + Semantic Reweighting (SR) | Suppress conflicting activations and recover coherent structures in \(S^{(3)}\) |
+| **FP** | Adaptive Positional Debiasing (APD) + Two-stage Foreground Refinement (FR) | Remove positional/background interference and produce an initial purified response S<sup>(1)</sup> |
+| **FL** | Cross-image Candidate Voting + Multi-cue Clustering | Localize discriminative target regions and refine to S<sup>(2)</sup> |
+| **FC** | Semantic Disagreement Penalization (SDP) + Semantic Reweighting (SR) | Suppress conflicting activations and recover coherent structures in S<sup>(3)</sup> |
 
 Each stage builds on the previous one; ablations in the paper show consistent mIoU improvements when FP, FL, and FC are added sequentially (see teaser above).
 
