@@ -126,7 +126,6 @@ Supported benchmarks:
 |------|----------|
 | Semantic | COCO-20<sup>i</sup>, LVIS-92<sup>i</sup>, ISIC, SUIM, iSAID, Chest X-ray |
 | Part | PASCAL-Part, PACO-Part |
-| Personalized | PerMIS |
 | Slender structures | Fundus (see paper Appendix F) |
 
 ## Inference
